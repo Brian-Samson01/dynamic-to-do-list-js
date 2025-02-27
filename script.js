@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listeners for adding tasks
     addButton.addEventListener("click", addTask);
-    taskInput.addEventListener("keydown", (event) => {
+    taskInput.addEventListener("keypress", (event) => {
         if (event.key === "Enter") {
             event.preventDefault(); // Prevent form submission
             addTask();
